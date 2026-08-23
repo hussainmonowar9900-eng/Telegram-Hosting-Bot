@@ -15,14 +15,14 @@ class Config:
     class Bot:
         """Bot-specific configurations from environment variables."""
         # --- Core Telegram API ---
-        API_ID = os.getenv("API_ID")
-        API_HASH = os.getenv("API_HASH")
-        BOT_TOKEN = os.getenv("BOT_TOKEN")
+        API_ID = os.getenv("31430254")
+        API_HASH = os.getenv("07db51839a64d3f06fc3282a7493048f")
+        BOT_TOKEN = os.getenv("8909501505:AAHqrFkOz2IOF1QbH6cLLIOSbDYuXXZG0Q4")
 
         # --- Admin and Database ---
         # NOTE: Admin IDs should be a comma-separated string in your .env file
         # e.g., ADMIN_ID="12345,67890"
-        ADMIN_STRING = os.getenv("ADMIN_ID", "0")
+        ADMIN_STRING = os.getenv("7531023551", "0")
         try:
             ADMIN_IDS = [int(admin_id) for admin_id in ADMIN_STRING.split(',')]
         except (ValueError, TypeError):
